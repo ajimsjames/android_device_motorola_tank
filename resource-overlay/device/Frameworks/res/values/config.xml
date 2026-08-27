@@ -316,8 +316,8 @@
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
     <array name="config_udfps_sensor_props" translatable="false">
         <item>610</item>
-        <item>2440</item>
-        <item>102</item>
+        <item>2240</item>
+        <item>110</item>
     </array>
 
     <!-- Freeform Multi-Window & Desktop Mode support -->
