@@ -319,4 +319,13 @@
         <item>2440</item>
         <item>102</item>
     </array>
+
+    <!-- Freeform Multi-Window & Desktop Mode support -->
+    <bool name="config_supportsFreeformWindowManagement">true</bool>
+
+    <!-- Multi-level Flashlight brightness steps -->
+    <integer name="config_torch_brightness_levels">5</integer>
+
+    <!-- Quick Doze deep sleep constants (Transition to deep sleep in 3 min) -->
+    <string name="config_device_idle_constants" translatable="false">inactive_to=180000,sensing_to=0,locating_to=0,location_accuracy=20.0,motion_inactive_to=0,idle_after_inactive_to=0,idle_pending_to=180000,max_idle_pending_to=360000,idle_pending_factor=2.0,quick_doze_delay_to=60000,idle_to=3600000,max_idle_to=21600000,idle_factor=2.0,min_time_to_alarm=3600000,max_temp_app_allowlist_duration_ms=20000,mms_temp_app_allowlist_duration_ms=60000,sms_temp_app_allowlist_duration_ms=20000,notification_allowlist_duration_ms=20000,wait_for_unlock=true</string>
 </resources>
