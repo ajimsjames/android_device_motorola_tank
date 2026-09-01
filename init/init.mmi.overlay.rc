@@ -2,8 +2,8 @@ import /vendor/etc/init/hw/init.vendor.st21nfc.rc
 
 on fs
     insmod /vendor/lib/modules/goodix_fod_mmi.ko
-    #zram wb
-    mount_all /vendor/etc/fstab.qcom.zram --early
+    # zram disabled per user request
+    # mount_all /vendor/etc/fstab.qcom.zram --early
 
 on post-fs && property:ro.boot.secure_hardware=0
     write /proc/con_dfpar/con_dfpar_enable 1

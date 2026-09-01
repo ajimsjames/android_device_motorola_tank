@@ -309,16 +309,17 @@
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
          where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
          and Strength as defined in Authenticators.java -->
-    <array name="config_biometric_sensors" translatable="false">
+    <string-array name="config_biometric_sensors" translatable="false">
         <item>0:2:15</item>
-    </array>
+    </string-array>
 
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
-    <array name="config_udfps_sensor_props" translatable="false">
+    <!-- X-center (px), Y-center (px), Radius (px) -->
+    <integer-array name="config_udfps_sensor_props" translatable="false">
         <item>610</item>
-        <item>2240</item>
+        <item>2440</item>
         <item>110</item>
-    </array>
+    </integer-array>
 
     <!-- Freeform Multi-Window & Desktop Mode support -->
     <bool name="config_supportsFreeformWindowManagement">true</bool>

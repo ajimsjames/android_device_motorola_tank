@@ -100,12 +100,16 @@ PRODUCT_PACKAGES_REMOVE += \
 
 # ADB Authorization & Root Access
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.adb.secure=0 \
-    persist.sys.usb.config=adb
+    persist.sys.usb.config=adb \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1 \
+    ro.adb.secure=0
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/adb_keys:$(TARGET_COPY_OUT_SYSTEM)/etc/security/adb_keys \
     $(LOCAL_PATH)/configs/adb_keys:$(TARGET_COPY_OUT_VENDOR)/etc/security/adb_keys \
+    $(LOCAL_PATH)/configs/adb_keys:$(TARGET_COPY_OUT_PRODUCT)/etc/security/adb_keys \
+    $(LOCAL_PATH)/configs/adb_keys:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/security/adb_keys \
     $(LOCAL_PATH)/configs/adb_keys:$(TARGET_COPY_OUT_RAMDISK)/adb_keys
 
 # SetupWizard properties
