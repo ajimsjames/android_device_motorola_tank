@@ -273,35 +273,19 @@
          If a non-zero value is set for config_defaultPeakRefreshRate, then
          config_defaultRefreshRate may be set to 0, in which case the value set for
          config_defaultPeakRefreshRate will act as the default frame rate. -->
-    <integer name="config_defaultRefreshRate">0</integer>
+    <!-- The default refresh rate for a given device. Change this value to set a higher default
+         refresh rate. -->
+    <integer name="config_defaultRefreshRate">120</integer>
 
-    <!-- The default peak refresh rate for a given device. Change this value if you want to prevent
-         the framework from using higher refresh rates, even if display modes with higher refresh
-         rates are available from hardware composer. Only has an effect if the value is
-         non-zero. -->
+    <!-- The default peak refresh rate for a given device. -->
     <integer name="config_defaultPeakRefreshRate">120</integer>
 
-    <!-- The display uses different gamma curves for different refresh rates. It's hard for panel
-         vendors to tune the curves to have exact same brightness for different refresh rate. So
-         flicker could be observed at switch time. The issue is worse at the gamma lower end.
-         In addition, human eyes are more sensitive to the flicker at darker environment.
-         To prevent flicker, we only support higher refresh rates if the display brightness is above
-         a threshold.
-         For example, no higher refresh rate if
-             display brightness <= disp0 && ambient brightness <= amb0
-             || display brightness <= disp1 && ambient brightness <= amb1
-         Brightness thresholds are paired with lux thresholds - they both have to be met.
-         A negative brightness or lux value means that only one threshold should be used - e.g. if
-         the brightness value is negative, only the lux threshold is applied. -->
-    <!-- Low zone brightness thresholds in the range [0, 255] -->
+    <!-- Eliminate low brightness / ambient light refresh rate throttling to maintain 120Hz at all times -->
     <array name="config_brightnessThresholdsOfPeakRefreshRate" translatable="false">
-        <item>77</item>
-        <item>62</item>
+        <item>-1</item>
     </array>
 
-    <!-- Low zone lux thresholds -->
     <array name="config_ambientThresholdsOfPeakRefreshRate" translatable="false">
-        <item>70</item>
         <item>-1</item>
     </array>
 
