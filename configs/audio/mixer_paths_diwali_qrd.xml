@@ -126,12 +126,12 @@
     <ctl name="ADC3 ChMap" value="ZERO" />
     <ctl name="ADC4 ChMap" value="ZERO" />
 
-    <!-- Volume controls -->
-    <ctl name="RX_RX0 Digital Volume" value="84" />
-    <ctl name="RX_RX1 Digital Volume" value="84" />
-    <ctl name="RX_RX2 Digital Volume" value="84" />
-    <ctl name="HPHL Volume" value="20" />
-    <ctl name="HPHR Volume" value="20" />
+    <!-- Volume controls (Boosted for Louder Speakers & Earpiece) -->
+    <ctl name="RX_RX0 Digital Volume" value="90" />
+    <ctl name="RX_RX1 Digital Volume" value="90" />
+    <ctl name="RX_RX2 Digital Volume" value="90" />
+    <ctl name="HPHL Volume" value="22" />
+    <ctl name="HPHR Volume" value="22" />
 
     <ctl name="TX_DEC0 Volume" value="84" />
     <ctl name="TX_DEC1 Volume" value="84" />
@@ -1855,6 +1855,8 @@
     <path name="speaker">
         <ctl name="aw_dev_0_prof" value="Music" />
         <ctl name="aw_dev_1_prof" value="Music" />
+        <ctl name="RX_RX0 Digital Volume" value="90" />
+        <ctl name="RX_RX1 Digital Volume" value="90" />
     </path>
 
     <path name="haptics-dev">
@@ -1865,12 +1867,14 @@
         <ctl name="aw_dev_0_prof" value="Receiver" />
         <ctl name="aw_dev_1_prof" value="Music" />
         <ctl name="aw_dev_1_switch" value="Disable" />
+        <ctl name="RX_RX0 Digital Volume" value="90" />
     </path>
 
     <path name="speaker-mono-2">
         <ctl name="aw_dev_0_prof" value="Receiver" />
         <ctl name="aw_dev_0_switch" value="Disable" />
         <ctl name="aw_dev_1_prof" value="Music" />
+        <ctl name="RX_RX1 Digital Volume" value="90" />
     </path>
 
     <path name="speaker-mono-vbat">
