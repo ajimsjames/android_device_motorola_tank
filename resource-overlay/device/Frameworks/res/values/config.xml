@@ -183,7 +183,44 @@
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
 
     <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
-    <string name="config_dozeDoubleTapSensorType" translatable="false">org.lineageos.sensor.double_tap</string>
+    <string name="config_dozeDoubleTapSensorType" translatable="false"></string>
+
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
+    <!-- Whether device supports tap to wake -->
+    <bool name="config_supportTapWake">true</bool>
+
+    <!-- Vibration Intensity Scale Factors (Low, Medium, High) - Max 2.0x Double Strength -->
+    <string-array name="config_vibrationIntensityScaleFactors" translatable="false">
+        <item>1.00</item>
+        <item>1.50</item>
+        <item>2.00</item>
+    </string-array>
+
+    <string-array name="config_keyboardVibrationIntensityScaleFactors" translatable="false">
+        <item>1.00</item>
+        <item>1.50</item>
+        <item>2.00</item>
+    </string-array>
+
+    <string-array name="config_externalVibrationIntensityScaleFactors" translatable="false">
+        <item>1.00</item>
+        <item>1.50</item>
+        <item>2.00</item>
+    </string-array>
+
+    <!-- Default intensity levels for all vibration types (1: Low, 2: Medium, 3: High) -->
+    <integer name="config_defaultRingVibrationIntensity">3</integer>
+    <integer name="config_defaultNotificationVibrationIntensity">3</integer>
+    <integer name="config_defaultAlarmVibrationIntensity">3</integer>
+    <integer name="config_defaultHapticFeedbackIntensity">3</integer>
+    <integer name="config_defaultMediaVibrationIntensity">3</integer>
+    <integer name="config_defaultKeyboardVibrationIntensity">3</integer>
+
+    <!-- Haptic Feedback & Vibration Settings -->
+    <bool name="config_keyboardVibrationSettingsSupported">true</bool>
+    <bool name="config_keyboardVibrationSettingsIntensitySupported">true</bool>
 
     <!-- Whether to enable fp unlock when screen turns off on udfps devices -->
     <bool name="config_screen_off_udfps_enabled">true</bool>

@@ -69,7 +69,7 @@ on boot
     chmod 0660 /sys/class/touchscreen/primary/sample
     chown system system /sys/class/touchscreen/primary/palm_settings
     chmod 0660 /sys/class/touchscreen/primary/palm_settings
-    chown system /system /sys/class/touchscreen/primary/stowed
+    chown system system /sys/class/touchscreen/primary/stowed
     chmod 0660 /sys/class/touchscreen/primary/stowed
     chown system system /sys/class/touchscreen/primary/pitch
     chmod 0660 /sys/class/touchscreen/primary/pitch
