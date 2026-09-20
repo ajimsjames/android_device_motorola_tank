@@ -183,7 +183,7 @@
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
 
     <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
-    <string name="config_dozeDoubleTapSensorType" translatable="false"></string>
+    <string name="config_dozeDoubleTapSensorType" translatable="false">com.motorola.sensor.double_tap</string>
 
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
@@ -222,11 +222,36 @@
     <bool name="config_keyboardVibrationSettingsSupported">true</bool>
     <bool name="config_keyboardVibrationSettingsIntensitySupported">true</bool>
 
+    <!-- Motorola & AAC RichTap Haptic Waveform Patterns -->
+    <integer-array name="config_notificationFallbackVibePattern">
+        <item>0</item>
+        <item>100</item>
+        <item>150</item>
+        <item>100</item>
+    </integer-array>
+
+    <integer-array name="config_clockTickVibePattern">
+        <item>0</item>
+        <item>10</item>
+    </integer-array>
+
+    <!-- Waveform Ramp & Pipeline Constants (Sharp 0ms cutoff for premium LRA feel) -->
+    <integer name="config_vibrationWaveformRampStepDuration">5</integer>
+    <integer name="config_vibrationWaveformRampDownDuration">0</integer>
+    <integer name="config_vibrationPipelineMaxDuration">25</integer>
+
+    <!-- Vibrate on outgoing call connection -->
+    <bool name="config_vibrate_outgoing_call_indication">true</bool>
+
     <!-- Whether to enable fp unlock when screen turns off on udfps devices -->
     <bool name="config_screen_off_udfps_enabled">true</bool>
 
     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
-    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
+    <string name="config_dozeUdfpsLongPressSensorType" translatable="false"></string>
+
+    <bool name="config_fingerprintWakeAndUnlock">true</bool>
+    <bool name="config_wakeOnDozingFOD">true</bool>
+    <bool name="config_dozeSupportsAodHalfZoned">false</bool>
 
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
@@ -255,7 +280,7 @@
 
          Refer to autosuspend.h for details.
     -->
-    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">false</bool>
 
     <!-- Power Management: Specifies whether to decouple the interactive state of the
          device from the display on/off state.
@@ -274,7 +299,7 @@
 
          Refer to power.h for details.
     -->
-    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
 
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by

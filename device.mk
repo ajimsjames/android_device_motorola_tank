@@ -84,7 +84,7 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Vibrator
 $(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.moto_sm7450-richtap)
-$(call soong_config_set_bool,qti_vibrator,use_effect_stream,false)
+$(call soong_config_set_bool,qti_vibrator,use_effect_stream,true)
 
 # VINTF
 ODM_MANIFEST_SKUS += dn n
