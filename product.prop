@@ -16,3 +16,8 @@ import /product/etc/hardware.sku.${ro.boot.hardware.sku}.prop
 
 # SetupWizard
 ro.setupwizard.mode=DISABLED
+
+# About Phone
+ro.product.marketname=motorola edge 50
+ro.infinity.soc=Snapdragon 7 Gen 1 Accelerated Edition
+ro.infinity.camera=50MP + 13MP + 10MP

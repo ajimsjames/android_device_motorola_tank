@@ -15,5 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/infinity_tank.mk \
     $(LOCAL_DIR)/lineage_tank.mk \
     $(LOCAL_DIR)/voltage_tank.mk
